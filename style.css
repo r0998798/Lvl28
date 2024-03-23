@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    height: 50px; /* Aanpassen naar de gewenste grootte */
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner {
+    background-image: url('images/banner.jpg'); /* De URL van de banner afbeelding */
+    background-size: 100% auto; /* Laat de banner de volledige breedte van het scherm innemen en pas de hoogte automatisch aan */
+    background-position: center;
+    height: 300px; /* Hoogte van de banner */
+    width: 100%; /* Maak de banner de volledige breedte van het scherm */
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Zorg ervoor dat de tekst zichtbaar is op de afbeelding */
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Maak de container iets smaller voor kleinere schermen */
+    }
+}
