@@ -9,6 +9,14 @@ body {
     overflow: hidden;
 }
 
+.boxed-container {
+    border: 2px solid #ccc; /* Stel de randstijl en -kleur in */
+    padding: 20px; /* Voeg wat ruimte binnen de rand toe */
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+
 header {
     background-color: #333;
     color: #fff;
