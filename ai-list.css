@@ -5,6 +5,12 @@ body {
     background-color: #f0f0f0;
 }
 
+.Nav {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .container {
     display: flex;
     justify-content: center;
