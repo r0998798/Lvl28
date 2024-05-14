@@ -93,7 +93,7 @@ main #ai-items .ai-item {
 }
 main #ai-items .ai-item:hover {
     cursor: pointer;
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 main #ai-items .ai-item img {
     width: 100%;
