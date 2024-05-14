@@ -2,51 +2,109 @@
 <html lang="nl">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Level28 - Kunstmatige Intelligentie</title>
-  <link rel="stylesheet" href="ai-list.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level28 - AI lijst</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body>
-  <header>
-    <div class="Nav">
-      <div class="logo">
-        <img src="images/logo.png" alt="Logo">
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="ai-list.html">AI-List</a></li>
-          <li><a href="form.html">Form</a></li>
-        </ul>
-      </nav>
+    <header>
+        <div class="max-width">
+            <a href="index.html">
+                <img src="images/Logo.png" alt="Level 28">
+            </a>
+            <nav>
+                <a href="index.html" class="nav-item">Thuispagina</a>
+                <a href="ai-list.html" class="nav-item current-nav-item">AI lijst</a>
+                <a href="form.html" class="nav-item">Formulier</a>
+                <a href="#" class="nav-item">4e pagina</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="banner">
+        <div id="banner-text">
+            <h1>Welkom bij Level28</h1>
+            <p>Ontdek de wereld van Artificiële Intelligentie</p>
+        </div>
     </div>
-    <div class="banner">
-      <div class="banner-content">
-        <h1>AI-List</h1>
-        <h3>by Lvl28</h3>
-      </div>
-  </header>
-  <div class="container">
-    <div class="box" onclick="window.location.href='pagina1.html'">
-      <img src="images/chatgpt.png" alt="ChatGPT" />
-      <h2>ChatGPT</h2>
-    </div>
-    <div class="box" onclick="window.location.href='pagina2.html'">
-      <img src="images/llama.png" alt="Llama" />
-      <h2>Llama</h2>
-    </div>
-    <div class="box" onclick="window.location.href='pagina3.html'">
-      <img src="images/gemeni.png" alt="Gemeni" />
-      <h2>Gemeni</h2>
-    </div>
-    <div class="box" onclick="window.location.href='pagina4.html'">
-      <img src="images/claude.png" alt="Claude" />
-      <h2>Claude</h2>
-    </div>
-    <!-- Voeg meer hokjes toe zoals hierboven voor extra AI's -->
-  </div>
+
+    <main>
+
+        <h2>Gedocumenteerde Artificiële Intelligentie:</h2>
+
+        <section id="ai-items">
+        
+            <div class="ai-item" onclick="window.location.href='chatgpt.html'">
+                <img src="images/chatgpt.png" alt="ChatGPT">
+                <h3>ChatGPT</h3>
+            </div>
+        
+            <div class="ai-item" onclick="window.location.href='llama.html'">
+                <img src="images/llama.png" alt="Llama">
+                <h3>Llama</h3>
+            </div>
+        
+            <div class="ai-item" onclick="window.location.href='gemeni.html'">
+                <img src="images/gemeni.png" alt="Gemeni">
+                <h3>Gemeni</h3>
+            </div>
+        
+            <div class="ai-item" onclick="window.location.href='claude.html'">
+                <img src="images/claude.png" alt="Claude">
+                <h3>Claude</h3>
+            </div>
+        
+            <div class="ai-item" onclick="window.location.href='bing.html'">
+                <img src="images/bing.png" alt="Bing AI">
+                <h3>Bing AI</h3>
+            </div>
+
+            <div class="ai-item" onclick="window.location.href='jasper.html'">
+                <img src="images/jasper.png" alt="Jasper AI">
+                <h3>Jasper AI</h3>
+            </div>
+            
+            <div class="ai-item" onclick="window.location.href='copilot.html'">
+                <img src="images/copilot.png" alt="Copilot">
+                <h3>Copilot</h3>
+            </div>
+        
+        </section>
+        
+        <h2>Andere AI modellen:</h2>
+        
+        <section id="other-ai-items">
+            <ul>
+                <li>
+                    <strong>DALL·E:</strong><br>Deze AI begrijpt zeer goed nuances en detail, waardoor je je ideeën moeiteloos kunt vertalen
+                    naar uitzonderlijk nauwkeurige afbeeldingen.
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="max-width">
+            <h3>Blijf in contact:</h3>
+            <div id="contact">
+                <a href="tel:016 45 18 25">016 45 18 25</a>
+                <div id="socials">
+                    <a href="https://www.instagram.com/" target="_blank" class="bi bi-instagram"></a>
+                    <a href="https://www.facebook.com/" target="_blank" class="bi bi-facebook"></a>
+                    <a href="https://twitter.com/" target="_blank" class="bi bi-twitter-x"></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="bi bi-youtube"></a>
+                </div>
+                <a href="mailto:info@lvl28.com">info@lvl28.com</a>
+            </div>
+        </div>
+
+    </footer>
 </body>
 
 </html>

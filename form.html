@@ -3,51 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Level28 - Kunstmatige Intelligentie</title>
+    <title>Level28 - Formulier</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
   </head>
   <body>
     <header>
-        <div class="Nav">
-            <div class="logo">
-                <img src="images/logo.png" alt="Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">AI-List</a></li>
-                    <li><a href="form.html">Form</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="banner">
-          <div class="banner-content">
-            <h1>AI-List</h1>
-            <h3>by Lvl28</h3>
-          </div>
+      <div class="max-width">
+        <a href="index.html">
+          <img src="images/Logo.png" alt="Level 28" />
+        </a>
+        <nav>
+          <a href="index.html" class="nav-item">Thuispagina</a>
+          <a href="ai-list.html" class="nav-item">AI lijst</a>
+          <a href="form.html" class="nav-item current-nav-item">Formulier</a>
+          <a href="#" class="nav-item">4e pagina</a>
+        </nav>
+      </div>
     </header>
-    <h2>Vul je gegevens in:</h2>
 
-    <form>
-      <label for="voornaam">Voornaam:</label><br />
-      <input type="text" id="voornaam" name="voornaam" required /><br />
+    <div id="banner">
+      <div id="banner-text">
+        <h1>Welkom bij Level28</h1>
+        <p>Ontdek de wereld van Artificiële Intelligentie</p>
+      </div>
+    </div>
 
-      <label for="achternaam">Achternaam:</label><br />
-      <input type="text" id="achternaam" name="achternaam" required /><br />
+    <main>
+      <h2>Contactsformulier</h2>
 
-      <label for="email">E-mailadres:</label><br />
-      <input type="email" id="email" name="email" required /><br />
+      <form>
+        <h2>Vul je gegevens in:</h2>
 
-      <label for="bedrijfsnaam">Bedrijfsnaam (optioneel):</label><br />
-      <input type="text" id="bedrijfsnaam" name="bedrijfsnaam" /><br /><br />
+        <label for="voornaam">Voornaam:</label><br />
+        <input type="text" id="voornaam" name="voornaam" required /><br />
 
-      <label for="items">Kies een of meer items:</label><br />
-      <select name="items[]" id="items" multiple>
-        <option value="item1">AI 1</option>
-        <option value="item2">AI 2</option>
-        <option value="item3">AI 3</option>
-        <!-- Voeg meer opties toe zoals hierboven voor extra items --></select
-      ><br /><br />
-      <input type="submit" value="Verzenden" />
-    </form>
+        <label for="achternaam">Achternaam:</label><br />
+        <input type="text" id="achternaam" name="achternaam" required /><br />
+
+        <label for="email">E-mailadres:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="bedrijfsnaam">Bedrijfsnaam (optioneel):</label><br />
+        <input type="text" id="bedrijfsnaam" name="bedrijfsnaam" /><br /><br />
+
+        <label for="items">Kies een item:</label><br />
+        <select id="ai-dropdown" name="ai-dropdown">
+          <option value="" disabled selected>Selecteer AI</option>
+          <option value="chatgpt">ChatGPT</option>
+          <option value="llama">Llama</option>
+          <option value="gemeni">Gemeni</option>
+          <option value="bing">Bing AI</option>
+          <option value="jasper">Jasper AI</option>
+          <option value="copilot">Copilot</option></select
+        ><br /><br />
+        <input id="submit" type="submit" value="Verzenden" />
+      </form>
+    </main>
+
+    <footer>
+      <div class="max-width">
+        <h3>Blijf in contact:</h3>
+        <div id="contact">
+          <a href="tel:016 45 18 25">016 45 18 25</a>
+          <div id="socials">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="bi bi-instagram"
+            ></a>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="bi bi-facebook"
+            ></a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="bi bi-twitter-x"
+            ></a>
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              class="bi bi-youtube"
+            ></a>
+          </div>
+          <a href="mailto:info@lvl28.com">info@lvl28.com</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
