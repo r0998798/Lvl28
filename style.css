@@ -74,7 +74,7 @@ main section .boxed-container {
 }
 
 main section ul li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 main #ai-items {
@@ -125,6 +125,7 @@ main form input {
     border: none;
     box-shadow: 0 1px 5px var(--shadow-color);
     border-radius: 5px;
+    height: 30px;
 }
 main form select {
     border: none;
@@ -140,6 +141,9 @@ main form #submit {
     height: 50px;
     border-radius: 5px;
     cursor: pointer;
+}
+main form select {
+    height: 30px;
 }
 
 /* FOOTER */
