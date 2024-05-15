@@ -175,20 +175,27 @@ footer .max-width #contact #socials {
 /*BUTTONS*/
 
 .buttons {
+    display: flex;
     margin-top: auto;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.button {
-    display: block;
-    width: 100px;
-    margin-top: 10px;
-    padding: 5px;
-    background-color: #007bff;
-    color: #fff;
+button {
+    display: flexbox;
+    width: 45%;
+    background-color: var(--primary-color);
+    margin-top: 2px;
     border: none;
+    color: white;
+    height: 50px;
     border-radius: 5px;
     cursor: pointer;
-    text-align: center;
+    flex-direction: row;
+}
+
+button a:hover {
+    color: #000;
 }
 
 /*CONTENT*/
@@ -197,25 +204,31 @@ footer .max-width #contact #socials {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
+    width: 100%;
 }
 
 
 /*lEFT-RIGHT*/
 
 .left {
-    flex: 1;
-    margin-right: 20px;
+    margin-top: 1em;
+    float: left;
+    width: 100%;
+    text-align: left;
+    flex-direction: row;
 }
 
 .right {
-    flex: 1;
+    float: right;
+    width: 100%;
+    text-align: left;
+    flex-direction: row;
 }
 
 .left img {
     max-width: 33%;
-    max-height: 50vh;
-    margin-bottom: 20px;
+    max-height: 100%;
+    margin: 20px 0 20px;
 }
 
 .left-list, .right-list {
@@ -227,6 +240,20 @@ footer .max-width #contact #socials {
     margin-bottom: 10px;
 }
 
+/*COLUMNS*/
+.column {
+  float: left;
+  width: 47%;
+  margin: 15px;
+  justify-content: space-between;
+}
+
+/*ROWS*/
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /*VIEWPORTS*/
 
 @media (max-width: 1020px) {
@@ -252,6 +279,12 @@ footer .max-width #contact #socials {
     footer .max-width {
         margin: 0 40px;
     }
+    
+    .column {
+        width: 100%;
+    }
+
+    
 }
 
 @media (max-width: 750px) {
