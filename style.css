@@ -172,6 +172,61 @@ footer .max-width #contact #socials {
     font-size: 20px;
 }
 
+/*BUTTONS*/
+
+.buttons {
+    margin-top: auto;
+}
+
+.button {
+    display: block;
+    width: 100px;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*CONTENT*/
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+
+/*lEFT-RIGHT*/
+
+.left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.right {
+    flex: 1;
+}
+
+.left img {
+    max-width: 33%;
+    max-height: 50vh;
+    margin-bottom: 20px;
+}
+
+.left-list, .right-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-list li, .right-list li {
+    margin-bottom: 10px;
+}
+
 /*VIEWPORTS*/
 
 @media (max-width: 1020px) {
