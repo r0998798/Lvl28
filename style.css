@@ -207,8 +207,22 @@ button a:hover {
 .content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
     width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    padding: 0 20px;
+    gap: 20px;
+    height: 100%;
+}
+.content .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: max-content;
+    background-color: red;
+    height: 100%;
 }
 
 
