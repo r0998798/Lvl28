@@ -74,7 +74,7 @@ main section .boxed-container {
 }
 
 main section ul li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 main #ai-items {
@@ -106,7 +106,8 @@ main #other-ai-items {
 }
 
 main form {
-    width: fit-content;
+    width: 750px;
+    max-width: calc(100% - 40px);
     padding: 5px 20px;
     padding-bottom: 20px;
     border-radius: 10px;
@@ -119,12 +120,12 @@ main form label {
 }
 main form input {
     width: 100%;
-    max-width: 500px;
     margin-top: 2px;
     margin-bottom: 5px;
     border: none;
     box-shadow: 0 1px 5px var(--shadow-color);
     border-radius: 5px;
+    height: 30px;
 }
 main form select {
     border: none;
@@ -140,6 +141,9 @@ main form #submit {
     height: 50px;
     border-radius: 5px;
     cursor: pointer;
+}
+main form select {
+    height: 30px;
 }
 
 /* FOOTER */
@@ -172,9 +176,105 @@ footer .max-width #contact #socials {
     font-size: 20px;
 }
 
+/*BUTTONS*/
+
+.buttons {
+    display: flex;
+    margin-top: auto;
+    justify-content: space-between;
+    width: 100%;
+}
+
+button {
+    display: flexbox;
+    width: 45%;
+    background-color: var(--primary-color);
+    margin-top: 2px;
+    border: none;
+    color: white;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-direction: row;
+}
+
+button a:hover {
+    color: #000;
+}
+
+/*CONTENT*/
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    padding: 0 20px;
+    gap: 20px;
+    height: 100%;
+}
+.content .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: max-content;
+    height: 100%;
+}
+
+
+/*lEFT-RIGHT*/
+
+.left {
+    margin-top: 1em;
+    float: left;
+    width: 100%;
+    text-align: left;
+    flex-direction: row;
+}
+
+.right {
+    float: right;
+    width: 100%;
+    text-align: left;
+    flex-direction: row;
+}
+
+
+.left img {
+    max-width: 33%;
+    max-height: 100%;
+    margin: 20px 0 20px;
+}
+
+.left-list, .right-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-list li, .right-list li {
+    margin-bottom: 10px;
+}
+
+/*COLUMNS*/
+.column {
+  float: left;
+  width: 47%;
+  margin: 15px;
+  justify-content: space-between;
+}
+
+/*ROWS*/
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /*VIEWPORTS*/
 
-@media (max-width: 1020px) {
+@media (max-width: 1080px) {
 
     /* HEADER */
 
@@ -197,6 +297,12 @@ footer .max-width #contact #socials {
     footer .max-width {
         margin: 0 40px;
     }
+    
+    .column {
+        width: 100%;
+    }
+
+    
 }
 
 @media (max-width: 750px) {
